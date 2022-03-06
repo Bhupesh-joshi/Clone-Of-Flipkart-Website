@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping by Bhupesh</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name="" id="" placeholder="Search Here">
+                <button class="btn">
+                    Search
+                </button>
+                <!-- <button class="login">
+                    Login
+                </button> -->
+
+                <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+                <div id="id01" class="modal">
+
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                            title="Close Modal">&times;</span>
+                        <img src="login.png" alt="login.png" class="avatar">
+                    </div>
+                    <div class="containers">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit">Login</button>
+                    </div>
+                    </form>
+                </div>
+
+                <script>
+                    var modal = document.getElementById('id01');
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="slider">
+                <div class="mySlides fade">
+                    <img src="https://rukminim1.flixcart.com/flap/1200/1200/image/c261c14211d3a59e.jpg?q=50"
+                        style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://rukminim1.flixcart.com/flap/1200/1200/image/abb02040026c7a59.jpg?q=50"
+                        style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://rukminim1.flixcart.com/flap/1200/1200/image/5c2adca302724ff8.jpg?q=50"
+                        style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://rukminim1.flixcart.com/flap/1200/1200/image/8c52d09c145745cc.jpg?q=50"
+                        style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://rukminim1.flixcart.com/flap/1200/1200/image/abb02040026c7a59.jpg?q=50"
+                        style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://rukminim1.flixcart.com/flap/1200/1200/image/0839f13f5ac1d6db.jpeg?q=50"
+                        style="width:100%">
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) { slideIndex = 1 }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        setTimeout(showSlides, 2000);
+                    }
+                </script>
+                <img src="https://rukminim1.flixcart.com/flap/1200/1200/image/c261c14211d3a59e.jpg?q=50" alt="">
+            </div>
+            <div class="card">
+                <h2 class="my-2"> Deals Of The Day</h2>
+                <h4>05:19:41 Left</h4>
+                <div class="cards">
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/"> 
+                            <img src="https://rukminim1.flixcart.com/flap/110/110/image/43d9c318e1076cb2.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Necklaces 10% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Necklaces</p>
+                            <p class="text-center my-1">10% Off</p>
+                            <p class="text-center my-1">Get Trendy Look</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/210/110/ktq4l8w0/diary-notebook/r/l/d/frisco-brown-2022-signature-original-imag7yeduggejfzp.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Daires 40% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Daires Gift Set</p>
+                            <p class="text-center my-1">40% Off</p>
+                            <p class="text-center my-1">Singanature & More</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/knexksw0/backpack/i/o/s/wrgn-bp-bmlt29-12630602-backpack-wrogn-original-imag23ehndjueysj.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Backpacks 50% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Top Accessories</p>
+                            <p class="text-center my-1">Upto 50% Off</p>
+                            <p class="text-center my-1">BagPacks</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/kmccosw0/t-shirt/i/8/z/s-mwss21ts12a-metronaut-original-imagf9gwtewbnfjd.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">T-shirts under 199</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Metronaut</p>
+                            <p class="text-center my-1">From199+Extra</p>
+                            <p class="text-center my-1">Tops & t-shirts</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/krkyt8w0/shoe/6/b/r/11-hmi55-11-adidas-vicblu-ftwwht-solred-conavy-original-imag5cd4ayngenun.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Shoes 40% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Addidas & Reebok</p>
+                            <p class="text-center my-1">Min 40% Off</p>
+                            <p class="text-center my-1">Sports Shoes</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/kpft18w0/sari/7/d/c/free-ksrskhs27-kimisha-unstitched-original-imaf4a5rrbe8m5fp.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Sarees Under 499</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Sarees & Dress</p>
+                            <p class="text-center my-1">Under 499</p>
+                            <p class="text-center my-1">Varanga</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/jxqfonk0/cushion-pillow-cover/9/u/f/cc-109-aerohaven-original-imafg4hzpryzjhnr.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Cushions + Pillows 99</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Cushions & Pillows</p>
+                            <p class="text-center my-1">From 99+</p>
+                            <p class="text-center my-1">Limited Stock</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/ku2zjww0/hammer-drill/l/w/k/bgbh26re-buildskill-original-imag79zz9hmxmffc.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Tool from 299</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Power Tool</p>
+                            <p class="text-center my-1">From 299</p>
+                            <p class="text-center my-1">Best Selling</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/flap/110/110/image/43d9c318e1076cb2.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Necklaces 10% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Necklaces</p>
+                            <p class="text-center my-1">10% Off</p>
+                            <p class="text-center my-1">Get Trendy Look</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/flap/110/110/image/43d9c318e1076cb2.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Necklaces 10% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Necklaces</p>
+                            <p class="text-center my-1">10% Off</p>
+                            <p class="text-center my-1">Get Trendy Look</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="my-2"> Trending Offer's</h2>
+                <h4>11:45:54 left</h4>
+                <div class="cards">
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/ktg4ia80/fabric/y/d/n/no-2-35-m-unstitched-na-shankar01-trijal-fab-original-imag6sgzwxmkcfmu.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">T-Shirt Top offers</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Men's Shirt</p>
+                            <p class="text-center my-1">Top Offer's</p>
+                            <p class="text-center my-1">Great Savings!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/kt7jv680/screen-guard/edge-to-edge-screen-guard/8/d/r/cs-rj-marlins-dz09-smartwatch-vprime-original-imag6hkphaazwjnh.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Watch 15% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Smart Watch</p>
+                            <p class="text-center my-1">Extra 15% Off</p>
+                            <p class="text-center my-1">Great Savings</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/kqidx8w0/shoe/i/4/n/6-brd-406-300-blue-6-birde-blue-original-imag4g8cmfkfzkjg.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Shoes 15% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Sports Shoes</p>
+                            <p class="text-center my-1">Extra 15% Off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/kylvr0w0/chopper/b/q/l/5-stainless-steel-blade-system-900-ml-dismal-black-color-mini-original-imagas77zrhcvuzz.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Choppers Top offers</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Choppers&Sli..</p>
+                            <p class="text-center my-1">Top Offers</p>
+                            <p class="text-center my-1">Show Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/kufuikw0/sling-bag/f/j/w/women-s-leatherette-sling-bag-black-black-fgo-275-1-25-fgo-275-original-imag7kgnmgba4jev.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Sling 10% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Sling Bags</p>
+                            <p class="text-center my-1">Extra10% Off</p>
+                            <p class="text-center my-1">Buy Now</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/kt39jm80/sari/d/i/l/free-shivu-kedar-fab-unstitched-original-imag6gftc3c8rb3n.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Sarees under 499</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Sarees & Dress</p>
+                            <p class="text-center my-1">Under 499</p>
+                            <p class="text-center my-1">Varanga</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/km9ht3k0/watch/b/t/s/ls2734-limestone-original-imagf799an7rxgfz.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Watchs 5% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Wrist Watchs</p>
+                            <p class="text-center my-1">Extra5% OFF</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/khtghow0pkrrdj/wall-clock/z/g/a/2147-analog-ajanta-original-imafxty65rxw5zn4.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Clocks Under 499</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Wall Clocks</p>
+                            <p class="text-center my-1">From 499</p>
+                            <p class="text-center my-1">Discover Now</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/ktg4ia80/fabric/y/d/n/no-2-35-m-unstitched-na-shankar01-trijal-fab-original-imag6sgzwxmkcfmu.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Shirt Top Offers</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Men's Shirts</p>
+                            <p class="text-center my-1">Top Offer's</p>
+                            <p class="text-center my-1">Great Savings!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/ktg4ia80/fabric/y/d/n/no-2-35-m-unstitched-na-shankar01-trijal-fab-original-imag6sgzwxmkcfmu.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Shirts Top Offers</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Men's Shirt</p>
+                            <p class="text-center my-1">Top Offer's</p>
+                            <p class="text-center my-1">Great Savings!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/ktg4ia80/fabric/y/d/n/no-2-35-m-unstitched-na-shankar01-trijal-fab-original-imag6sgzwxmkcfmu.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Necklaces 10% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Men's Shirt</p>
+                            <p class="text-center my-1">Top Offer's</p>
+                            <p class="text-center my-1">Great Savings!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="my-2">Top Pics on Men's Footwear</h2>
+                <div class="cards">
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/shoe/g/t/y/30592102-9-puma-black-original-imaeqer46qgskpj4.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Shoes 30% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Addidas & Puma</p>
+                            <p class="text-center my-1">30% Off</p>
+                            <p class="text-center my-1">Sports Shoes</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/kg15ocw0-0/shoe/t/u/n/sz-aw20-sf-001-8-slazenger-navy-green-original-imafwc7hqfcddqh4.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Slazanger 50% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Slazanger</p>
+                            <p class="text-center my-1">50% Off</p>
+                            <p class="text-center my-1">Sports Shoes</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/kg15ocw0-0/shoe/d/m/k/749794-001nike-nike-wolf-grey-black-white-original-imafwcae3h5xerag.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Shoes 40% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Nike, Skechers</p>
+                            <p class="text-center my-1">Upto 40% Off</p>
+                            <p class="text-center my-1">Men's Sports Shoes</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/kp1imq80/shoe/e/o/a/10-9771329-wrogn-beige-original-imag3cw3cfz88beb.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">WROGN 30% Extra</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">WROGN</p>
+                            <p class="text-center my-1">Min 30% Extra</p>
+                            <p class="text-center my-1">Men's Footwear</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/k65d18w0pkrrdj/shoe/y/j/y/9-gc-1869115-woodland-original-imafzspsfuzta8js.jpeg?q=70"
+                                alt="" width="100px"></a>
+                        <div class="lines">
+                            <p class="text-center my-1">Woodland, Red Tape</p>
+                            <p class="text-center my-1">Upto 60% Off</p>
+                            <p class="text-center my-1">Sports Shoes</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/ku1k4280/shoe/f/9/3/8-gc-2917118-42-woodland-camel-original-imag79amh99hksks.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Casual 30% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Woodland & Crocs</p>
+                            <p class="text-center my-1">Min 30% Off</p>
+                            <p class="text-center my-1">Men's Casual</p>
+                        </div>
+                    </div>
+                    <div class="card-item"><a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/krxtrww0/shoe/3/b/o/10-sx0677g-sparx-turkeyblueblack-original-imag5mcfzuvssh8y.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Shoes & Sandals from 149</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Season's Best Seller</p>
+                            <p class="text-center my-1">From 149</p>
+                            <p class="text-center my-1">Shoes & Sandals</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/kjhgzgw0-0/shoe/4/0/c/cj0291-100nike-10-nike-white-black-flash-crimson-oracle-aqua-original-imafzfg4srdt4s5y.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Shoes 60% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Nike & Addidas</p>
+                            <p class="text-center my-1">Upto 60% Off</p>
+                            <p class="text-center my-1">Running Shoes</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/shoe/g/t/y/30592102-9-puma-black-original-imaeqer46qgskpj4.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Shoes 30% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Addidas & Puma</p>
+                            <p class="text-center my-1">30% Off</p>
+                            <p class="text-center my-1">Sports Shoes</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/shoe/g/t/y/30592102-9-puma-black-original-imaeqer46qgskpj4.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Necklaces 10% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Addidas & Puma</p>
+                            <p class="text-center my-1">30% Off</p>
+                            <p class="text-center my-1">Sports Shoes</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/shoe/g/t/y/30592102-9-puma-black-original-imaeqer46qgskpj4.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Necklaces 10% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Addidas & Puma</p>
+                            <p class="text-center my-1">30% Off</p>
+                            <p class="text-center my-1">Sports Shoes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="my-2"> Women Accessories</h2>
+                <div class="cards">
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/k6b2snk0/ring/5/h/t/adjustable-504-ring-set-blueshine-original-imafc5jzdsgrhgtr.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Rings Under 299</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Couple Rings</p>
+                            <p class="text-center my-1">Under 299</p>
+                            <p class="text-center my-1">Don't miss out</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/flap/150/150/image/786ac193b30328af.jpg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Jewellery 40% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Sparkling Festive jew..</p>
+                            <p class="text-center my-1">40% Off</p>
+                            <p class="text-center my-1">Shop Now</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/khdqnbk0/mangalsutra-tanmaniya/m/g/c/s-01-vpcreation-original-imafxenmcbgethyj.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Jewellery 50% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Fashion Jewellery</p>
+                            <p class="text-center my-1">Upto 50% Off</p>
+                            <p class="text-center my-1">Grab Now</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/k3orqfk0/jewellery-set/f/s/b/h4-rg-karishma-kreations-original-imafmr9fat7sxgvu.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Jewellery 80% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Jewellery Set</p>
+                            <p class="text-center my-1">Min 80%Off</p>
+                            <p class="text-center my-1">Sukki</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/jnm2efk0/pendant-locket/q/n/y/nak-1301201-nakabh-original-imafa97h65nnnjg4.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Jewellery From 99</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Fashion Jewellery</p>
+                            <p class="text-center my-1">From 99</p>
+                            <p class="text-center my-1">Best Shellers</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/k7tdj0w0/anklet/n/v/f/1-nm-1737-silver-shine-original-imafpz3ygdmsnbhk.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Anklets Under 499</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Anklets</p>
+                            <p class="text-center my-1">Under 499</p>
+                            <p class="text-center my-1">Shining Diva</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/jxqfonk0/cushion-pillow-cover/9/u/f/cc-109-aerohaven-original-imafg4hzpryzjhnr.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Cushions & Pillows 99+</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Cushions & Pillows</p>
+                            <p class="text-center my-1">From 99+</p>
+                            <p class="text-center my-1">Limited Stock</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/ku2zjww0/hammer-drill/l/w/k/bgbh26re-buildskill-original-imag79zz9hmxmffc.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Necklaces 10% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Power Tool</p>
+                            <p class="text-center my-1">From 299</p>
+                            <p class="text-center my-1">Best Selling</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/flap/110/110/image/43d9c318e1076cb2.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Necklaces 10% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Necklaces</p>
+                            <p class="text-center my-1">10% Off</p>
+                            <p class="text-center my-1">Get Trendy Look</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="my-2"> Health Care Essentials</h2>
+                <div class="cards">
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/kobspe80/mask-respirator/f/3/f/free-size-100-3-ply-surgical-mask-100-piece-surgical-mask-vebnor-original-imag2ssu8hdqyjcu.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Masks From 79</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Surgical Masks</p>
+                            <p class="text-center my-1">Shop Now</p>
+                            <p class="text-center my-1">From 79</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/jle1qq80/vitamin-supplement/w/p/y/60-ashvagandha-himalaya-original-imaf8j6nbjzjrrhc.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Ayurveda 60% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Ayurveda</p>
+                            <p class="text-center my-1">60% Off</p>
+                            <p class="text-center my-1">Himalaya</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/k7m8brk0/mask-respirator/h/9/m/pp-2546-venus-original-imafpt5hhshgsgga.jpeg?q=70"
+                                alt="" width="100px">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Masks 90% Off</div>
+                        </div>
+                        <div class="lines">
+                            <p class="text-center my-1">HealthCare Accessories</p>
+                            <p class="text-center my-1">Shop Now</p>
+                            <p class="text-center my-1">Masks</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/jwxuvm80/medical-glove/t/f/3/latex-surgical-gloves-sterile-size-7-5-25-pair-box-agarwals-original-imafhhhnkjyehqqz.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Gloves 80% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Medical Gloves</p>
+                            <p class="text-center my-1">80% Off</p>
+                            <p class="text-center my-1">Shop Now</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/k9a8tjk0/mask-respirator/x/m/u/mb25-jokot-original-imafr4fkzycwacxd.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Masks 10% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Jackpot Surgical Masks</p>
+                            <p class="text-center my-1">Shop Now</p>
+                            <p class="text-center my-1">With Melt Blow..</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/k9vofbk0/mask-respirator/d/s/2/lpmsmrgfr25854-louis-philippe-original-imafrkhfstt8qhem.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Masks 10% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Louis Philippe</p>
+                            <p class="text-center my-1">Shop Now</p>
+                            <p class="text-center my-1">Anti Polution</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/k9yjb0w0/mask-respirator/q/m/b/12540-black-l-wildcraft-original-imafrmy4xuzgm8sa.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Masks 40% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Windcraft</p>
+                            <p class="text-center my-1">Shop Now</p>
+                            <p class="text-center my-1">Anti Polution</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/jnnhua80/crepe-bandage/e/m/e/crepe-bandage-10cm-x-4mt-for-wrist-arm-shoulder-ankle-calf-pain-original-imafaaphuyfjdwza.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Bandages 70% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Medicine</p>
+                            <p class="text-center my-1">Shop Now</p>
+                            <p class="text-center my-1">Bandages</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/image/150/150/jwxuvm80/medical-glove/t/f/3/latex-surgical-gloves-sterile-size-7-5-25-pair-box-agarwals-original-imafhhhnkjyehqqz.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Gloves 80% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Medical Gloves</p>
+                            <p class="text-center my-1">80% Off</p>
+                            <p class="text-center my-1">Shop Now</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/">
+                            <img src="https://rukminim1.flixcart.com/flap/110/110/image/43d9c318e1076cb2.jpeg?q=70"
+                                alt="" width="100px"></a>
+                                <div class="middle">
+                                    <div class="text">Necklaces 10% Off</div>
+                                </div>
+                        <div class="lines">
+                            <p class="text-center my-1">Necklaces</p>
+                            <p class="text-center my-1">10% Off</p>
+                            <p class="text-center my-1">Get Trendy Look</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="findings">
+                <h2 class="my-3"> Top Stories:Brand Directory</h2>
+                <h4 class="my-1">Most searched for on Flipkart</h4>
+                <h5>
+                    OPPO A16KVivo | Y33TOPPO | Reno7 | 5GOPPO | Reno7 Pro | 5GiPhone | 13iPhone | 13 ProiPhone | 13 Pro
+                    Max | iPhone | 13 MiniFlipkart | QuickBooksFlipkart | Help Centre | Flipkart | Track Orders |
+                    Flipkart | Manage Order |Flipkart Return OrdersFlipkart | Gift Cards | Store | Flipkart Axis Bank
+                    Credit Card | Flipkart Pay Later
+                </h5>
+                <h4 class="my-1">Mobile:</h4>
+                <h5>
+                    iPhone 12 64GB | iPhone 12 Pro 512GB | iPhone 12 128GB | Vivo Y91i | Vivo Y11 | Vivo Y15 | Vivo Y50
+                    | Vivo Y12 | Reno2 F | Oppo A12 | Oppo F15 | Oppo A31 | Samsung A71 | Samsung A51 | Samsung A31 |
+                    Realme X2 | iPhone 11 | iPhone 11 Pro | iPhone 11 Pro Max | Mobile Offers | iphone x4G Mobile |
+                    Nokia Mobile | Samsung Mobile | iphone | Oppo Mobile | Vivo Mobile
+                </h5>
+                <h4 class="my-1">Camera:</h4>
+                <h5>
+                    GoPro Action Camera | Nikon Camera | Canon Camera |Sony Camera | Canon DSLR | Nikon DSLR
+                </h5>
+                <h4 class="my-1">Laptops:</h4>
+                <h5>
+                    Microsoft Surface Go Pentium Gold 64GB | Microsoft Surface Go Pentium 128GB | Branded Laptops |
+                    Apple Laptops | Acer Laptops | Lenovo Laptops | Dell Laptops | Asus Laptops | HP Laptops | Gaming
+                    Laptops | 2 in 1 Laptops | Business Laptops
+                </h5>
+                <h4 class="my-1">TVs:</h4>
+                <h5>
+                    Nokia TV | Panasonic TV | Thomson TV | Vu TV | Realme TV | Motorola TV | OnePlus TV | sLG TV | Sony
+                    TV | Samsung TV | Android Television | Iffalcon Tv | Mi TV
+                </h5>
+                <h4 class="my-1">Large Appliences:</h4>
+                <h5>
+                    Washing Machines | Refrigerators | Air Conditioners | Electric Cookers | Electric Jug(Heater) /
+                    Travel Kettles | Induction Cooktops | Inverters / stabilizer | Irons / Iron Box | Mixer Grinder
+                    Juicer | Wet Grinders | Chimneys | Microwave Ovens | Vacuum Cleaners | Water Purifier | Fan</h5>
+                <h4 class="my-1">Clothing:</h4>
+                <h5>
+                    Men Shirts | Kurta Pajama | Kurtas | Men T-Shirts | Jeans | Saree | Dresses | Kids Dresses |
+                    Designer Salwar Suits | Bra | Designer Kurtis | Track Pant | Men Kurtas | Gym Wear | Party Dresses |
+                    Palazzo Suits | Boys Clothing | Gloves | Nighty | Maxi Dresses | Anarkali Gowns | Culottes | Salwar
+                    Suits | Kurtis | Designer Sarees | Leggings | Shorts | Georgette Sarees | Ethnic Wear | Briefs &
+                    Trunks
+                </h5>
+                <h4 class="my-1">Footware:</h4>
+                <h5>
+                    Shoes | Adidas Shoes | Reebok Shoes | Nike Shoes | Puma Shoes | Boots | Bata Shoes | Woodland Shoes
+                    | Skechers Shoes | Sneakers | Womens Boots | Sports Shoes | Loafers | Sandals | Lotto Sports Shoes |
+                    Casual Shoes | Womens Skechers Shoes | Asics Sports Shoes | Formal Shoes | School Shoes
+                </h5>
+                <h4 class="my-1">Grocerys:</h4>
+                <h5>
+                    PhonePe Grocery Voucher | Hand Wash | Soap | Cashew Nuts | Sunflower Oil | Eggs | Toilet Cleaner |
+                    Harpic Toilet Cleaner | Dettol Soap | Mustard Oil | Biscuits | Cheese | Patanjali Atta | Fortune Oil
+                    | Aashirvaad Atta | Tea
+                </h5>
+                <h4 class="my-1">Best Selling on Flipkart:</h4>
+                <h5>
+                    Bags | Samsung Galaxy Tab S7+Books | Toys | Candles | Helmets | Wall ClocksBaby Food | Chocolates |
+                    Cycles | Calculators | Lipsticks | Mask | Fastrack Watches | Wallets | Earrings | Gold Coins |
+                    Handbags
+                </h5>
+                <h4 class="my-1">Furniture:</h4>
+                <h5>
+                    Grand Furniture Sale | Furniture | Sofas | Beds | Dining sets | Wardrobes | Mattresses | TV Units |
+                    Tables | Chairs | Shelves | Bean Bags | Office Chairs | Computer Table | Office Tables | Red Sofa |
+                    Wakefit Beds | White Sofa | Wakefit Mattress | Green Sofa | Black Sofa | Brown Sofa
+                </h5>
+                <h4 class="my-1">BGMH:</h4>
+                <h5>
+                    Toys Store
+                </h5>
+            </div>
+        </div>
+    </main>
+    <footer class="flex-all-center">
+        <p>Copyright &copy; MyCart.com </p>
+    </footer>
+</body>
+
+</html>
